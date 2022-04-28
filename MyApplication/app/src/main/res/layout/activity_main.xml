@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".25"
+        android:orientation="horizontal"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="horizontal"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".75"
+        android:orientation="horizontal"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".25"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".75"
+        android:orientation="vertical"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="OK"
+        app:layout_constraintTop_toTopOf="@+id/v1"
+        app:layout_constraintStart_toEndOf="@+id/v5"
+        app:layout_constraintEnd_toStartOf="@+id/v6"
+        app:layout_constraintBottom_toTopOf="@+id/v2"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="OK"
+        app:layout_constraintTop_toBottomOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@+id/v4"
+        app:layout_constraintEnd_toStartOf="@id/v5"
+        app:layout_constraintBottom_toTopOf="@id/v3"
+        app:layout_constraintVertical_bias=".9"
+        />
+    
+
+    <!--    <Button-->
+<!--        android:id="@+id/btnOk"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="OK"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btnCancelar"-->
+<!--        app:layout_constraintVertical_bias=".9"-->
+<!--        app:layout_constraintHorizontal_chainStyle="spread_inside"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnCancelar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="CANCELAR"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnOk"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/btnEditar"-->
+<!--        app:layout_constraintVertical_bias=".9"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnEditar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="EDITAR"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/btnCancelar"-->
+<!--        app:layout_constraintVertical_bias=".9"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
